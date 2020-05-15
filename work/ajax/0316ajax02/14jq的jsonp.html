@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button id='btn'>请求数据</button>
+		<ul id='ul'></ul>
+	</body>
+	<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		//jq的jsonp只需要配置dataType:'jsonp'。
+		//这样做，后端会自动调用success
+		
+		//jsonp和ajax一毛钱关系都没有。
+		
+		$('#btn').on('click',function(){
+			$.ajax({
+				type:'get',
+				data:{
+					t:100
+				},
+				dataType:'jsonp',
+				url:'http://money.finance.sina.com.cn/jiaoyifenxi/api/openapi.php/DataService.getUserProfit',
+				success:function(res){
+					console.log(res);
+				}
+			})
+		})
+		
+		
+	</script>
+</html>

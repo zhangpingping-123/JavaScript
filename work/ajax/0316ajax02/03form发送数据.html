@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<!--ajax出现之前，都是通过form表单进行数据交互的。-->
+		
+		<!--action -> 填写服务器url-->
+		<!--method -> 请求方式-->
+		<!--一个input一个数据.数据名用name属性,数据值是value-->
+		<!--其他不需要用户输入的参数，用hidden表单传递-->
+		<!--点击submit按钮会自动进行请求-->
+		<!--form提交数据，是同步的，页面会默认刷新跳转-->
+		
+		<!--什么时候用ajax发送请求，什么时候用form发送请求？-->
+		<!--1:如果需要用户输入参数，并且默认请求数据成功会跳转，应该用form-->
+		<!--2:参数不需要用户输入，也没有默认跳转，应该用ajax(js逻辑)进行数据请求-->
+		
+		<form action="js/1.post.php" method="post">
+			<input type="text" value='' name='username' />
+			<input type="text" value='' name='age' />
+			<input type="hidden" value='555' name='rrr' />
+			<input type="hidden" value='666' name='ttt' />
+			<input type="hidden" value='777' name='mmm' />
+			<input type="submit" value="提交"/>
+		</form>
+		
+	</body>
+</html>

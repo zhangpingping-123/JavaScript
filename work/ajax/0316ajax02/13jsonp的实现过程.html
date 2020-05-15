@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button id='btn'>请求数据</button>
+		<ul id='ul'></ul>
+	</body>
+	
+	<script type="text/javascript">
+		
+		let oBtn = document.getElementById("btn");
+		
+		//点击时,动态生成script标签,然后设置src为跨域地址.
+		oBtn.onclick = function(){
+			let oScript = document.createElement("script");
+			document.body.appendChild(oScript);
+			oScript.src = 'http://192.168.1.10:8080/0316ajax02/js/getData.php?callback=render&t'
+			//插入之后还需要删除这个script标签.
+			oScript.onload = function(){
+				document.body.removeChild(this);
+			}			
+		}
+			
+		function render(arr){
+			let oUl = document.querySelector('ul');		
+			for(let i=0;i<arr.length;i++){
+				oUl.innerHTML += `<li>${arr[i]}</li>`
+			}
+		}
+				
+	</script>
+	
+	<!--<script src="http://192.168.1.10:8080/0316ajax02/js/getData.php?callback=render&t" type="text/javascript" charset="utf-8"></script>-->
+</html>

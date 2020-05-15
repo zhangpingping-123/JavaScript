@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+		
+		ajax用来干啥.
+			用来实现服务器交互的.(前端向后端,后端向前端,传递数据)
+		
+		ajax的基本概念
+			1:xhr对象的属性
+				xhr.onreadystatechange -> 事件 -> readystate变化时触发
+				xhr.readyState -> 表示ajax的进程.(进行到了哪个步骤).值是0-4.
+				xhr.status -> 服务器响应的类型.3个数字.开头的数字是1-5.
+					1xx,继续请求
+					2xx,成功了
+					3xx,重定向
+					4xx,客户端错误
+					5xx,服务端错误
+				xhr.responseText
+				
+				请求的基本过程:
+					let xhr = new XMLHttpRequest();
+					xhr.open('GET','url');
+					//send调用后浏览器处于一种等待状态(等待服务器响应).这个等待状态是异步的.
+					xhr.send();
+					//监听服务器响应。
+					xhr.onreadystatechange = function(){}
+								
+			2:参数发送(GET,POST)
+			
+				参数怎么写?
+					参数名1=参数值1&参数名2=参数值2
+				
+				GET发生参数是写在url后面,然后用?拼接 -> url?+参数
+				POST的参数写在send内.还需要在open和send中间设置请求头.
+				xhr.setRequestHeader('content-type':'application/x-www-form-urlencoded')
+				
+				参数只能送字符串.如果需要传递对象,需要通过JSON.stringify()转换成字符串.
+				
+				怎么看ajax的请求基本信息?
+					在浏览器的network内查看.
+				
+			3:服务器响应
+				
+				通过xhr.responseText获取.如果是对象字符串或者数组字符串,需要通过JSON.parse转换
+				
+		
+	</script>
+</html>

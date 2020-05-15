@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script src="js/jquery-1.11.1.js" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+//		$.ajax({
+//			type:"get",
+//			url:"http://localhost:8080/0316ajax02/js/1.get.php",
+//			success:function(res){
+//				console.log(res)
+//			}
+//		});
+
+//		如果两个页面的url的origin完全相同,就能请求数据
+//		前端的url:http://localhost:8080/0316ajax02/09%E8%B7%A8%E5%9F%9F.html
+//		后端的url:http://localhost:8080/0316ajax02/js/1.get.php
+		
+		$.ajax({
+			type:"get",
+			url:"http://192.168.1.10:8080/0316ajax02/js/1.get.php",
+			success:function(res){
+				console.log(res)
+			}
+		});
+				
+//		如果两个页面的url的origin不相同,就形成跨域，ajax默认不能跨域，造成报错。
+//		前端的url:http://localhost:8080/0316ajax02/09%E8%B7%A8%E5%9F%9F.html
+//		后端的url:http://192.168.1.10:8080/0316ajax02/js/1.get.php
+
+//		跨域报错:
+//		Access to XMLHttpRequest at 'http://192.168.1.10:8080/0316ajax02/js/1.get.php' 
+//		from origin 'http://localhost:8080' 
+//		has been blocked by CORS policy: 
+//		No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+	</script>
+</html>

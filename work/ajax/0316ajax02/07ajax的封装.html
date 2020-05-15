@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+
+//		c++的函数：
+//		函数调用 -> 函数声明(先写怎么用这个函数)(经理)
+//		函数声明 -> 函数的实现(写怎么实现这个函数)(码农)
+
+//		通过以下调用实现,请求1.get.php,请求成功后触发success方法,参数是data.
+
+		myAjax({
+			type:'GET',
+			url:'js/getList.php',
+			data:{
+				username:10,
+				age:20
+			},
+			dataType:'json',
+			headers:{'aaa':999,'bbb':10000},
+			
+			error:function(err){
+				console.log(err.status)
+			}
+		})
+		
+	</script>
+</html>

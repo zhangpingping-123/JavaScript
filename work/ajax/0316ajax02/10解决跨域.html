@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+//		解决跨域:
+//			1:代理.A服务器访问B服务器是跨域.但是C可以访问B,因此可以通过A访问C来间接访问B.
+//				ng反向代理.
+//				
+//			2:cors.
+//				在后端文件配置可以访问该后端文件的源的列表.
+//				header("Access-Control-Allow-Origin:*");
+//				* -> 所有的源
+//				Access-Control-Allow-Origin:* -> 允许所有的源来访问本后端文件
+//				Access-Control-Allow-Origin:http://localhost:8080 -> 允许http://localhost:8080来访问本后端文件
+
+//			3:jsonp(过时)
+//				原理:通过script的src可以跨域访问文件的原理实现.
+//				前端发送一个函数名字给后端,后端调用这个函数,并且传入跨域数据.
+		
+		$.ajax({
+			type:"get",
+			url:"http://192.168.1.10:8080/0316ajax02/js/1.get.php",
+			success:function(res){
+				console.log(res)
+			}
+		});
+		
+	</script>
+</html>
