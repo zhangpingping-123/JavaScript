@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //1-100之间的总和
+      //n-m之间的总和
+      // 1+2+3+4...+100
+      let sum = (n, m) => {
+        let result = 0;
+        for (let i = n; i <= m; i++) {
+          result += i
+        }
+        return result
+      }
+      console.log(sum(1, 10))
+
+      let sum2 = (n, m) => {
+        let n1 = n + m; //得到一对数字有多大
+        let n2 = (m - n + 1) / 2; //得到这个叠加数字 有多少对
+        return n1 * n2 //所有对 * 一对数字的值 就是总和
+      }
+      console.log(sum2(1, 99))
+      //9岁的小朋友 高斯
+      //1+2+3+...100
+      //1+100 = 101 (max-min+1)/2 50
+      // 101 * 50
+
+      //当形参的数量大于实参怎么办?
+      //当形参的数量小于实参怎么办?
+      // arguments
+      //js没有[重载]的概念,js有[重写]概念
+    </script>
+  </body>
+
+</html>

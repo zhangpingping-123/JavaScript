@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      let nYear = 2020
+      let nMonth = 3
+      let nDay = 20
+      let result = 0
+      //先计算月份 的总天数
+      // 4+3+2+1
+      //for 最小循环多少次? 最大循环多少次? 
+      // 整月数
+      let trueMonth = nMonth - 1 + ""
+      switch (trueMonth) {
+        case "11":
+          result += 31
+        case "10":
+          result += 31
+        case "9":
+          result += 30
+        case "8":
+          result += 31
+        case "7":
+          result += 31
+        case "6":
+          result += 30
+        case "5":
+          result += 31
+        case "4":
+          result += 30
+        case "3":
+          result += 31
+        case "2":
+          result += 28
+        case "1":
+          result += 31
+      }
+      //最后那个月 余下的月数
+      //把最后的部分月
+      result += nDay
+
+      //闰年的补充天为一天
+      if (nYear % 4 === 0 && nYear % 100 !== 0 || nYear % 400 === 0) {
+        //有没有必要补充一个闰年
+        if (nMonth >= 3) {
+          result += 1
+        }
+      }
+      console.log(result)
+    </script>
+  </body>
+
+</html>

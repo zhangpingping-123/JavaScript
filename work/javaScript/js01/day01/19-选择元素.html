@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div1">我是一个div1</div>
+    <script>
+      //声明一个变量名叫oBox的变量 值是 根据id=div1这个内容选中的标签/标签们
+      let oBox = document.getElementById("div1");
+      let name = "小张";
+      console.log(oBox);
+      //单遇双,双遇到
+      // oBox.innerHTML =
+      //   "<h1 style='background-color: blue; color: pink;'>JavaScript真容易!</h1>";
+      //{}
+      // oBox.innerHTML = `<h1 style="background-color: blue; color: pink;">${name}说: JavaScript真容易!</h1>`;
+      oBox.outerHTML = `<h1 style="background-color: blue; color: pink;">${name}说: JavaScript真容易!</h1>`;
+      //innerText
+      //outerHTML
+      //H5 C3
+      //JAVA13
+      //JAVA8
+    </script>
+  </body>
+</html>

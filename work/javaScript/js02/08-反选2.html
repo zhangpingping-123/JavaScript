@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>无标题文档</title>
+  </head>
+
+  <body>
+    <input type="button" value="反选" id="input1" />
+    <div id="div1">
+      <input type="checkbox" />
+      <input type="checkbox" checked />
+      <input type="checkbox" />
+      <input type="checkbox" checked />
+      <input type="checkbox" />
+    </div>
+
+    <script>
+      //初始化
+      //后续内容
+      //1. 选择元素
+      //触发器
+      //令页面发生变化的东西(通常是按钮)
+      let oReverseSelect = document.getElementById("input1");
+      let oDiv1 = document.getElementById("div1");
+      //渲染器
+      //被渲染的标签
+      let aInput = oDiv1.getElementsByTagName("input");
+
+      //2.绑定事件
+      oReverseSelect.onclick = function () {
+        //3. 渲染器渲染内容
+        for (let i = 0; i < 5; i++) {
+          if (aInput[i].checked) {
+            aInput[i].checked = false
+          } else {
+            aInput[i].checked = true
+          }
+        }
+      }
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //并不是深复制
+      var options = {
+        validate: true,
+        name: "bar",
+        obj: {
+          name: "zhangsan"
+        }
+      };
+      let obj = {
+        validate: false,
+        obj: {
+          name: "lisi",
+          gender: "male"
+        }
+      }
+      // newObj = {
+      //   validate: true,
+      //   name: "bar",
+      //   obj: {
+      //     name: "zhangsan",
+      //     gender: "male"
+      //   }
+      // };
+
+      let obj2 = extend(obj, options)
+      console.log(obj2)
+
+      function extend(target, object) {
+        for (let key in object) {
+          if (Object.prototype.toString.call(object[key]) === "[object Object]") {
+            target[key] = deepClone(target[key], object[key])
+          } else if (Object.prototype.toString.call(object[key]) === "[object Array]") {
+            target[key] = deepClone(target[key], object[key])
+          } else {
+            target[key] = object[key]
+          }
+        }
+        return target
+      }
+    </script>
+  </body>
+
+</html>

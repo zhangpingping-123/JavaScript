@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //请设计一个对x和y求和的一个函数
+      // function sum(x, y) {
+      //   console.log(x + y)
+      // }
+      // sum(1, 2) //3
+      // sum(7, 8) //15
+
+      //请设计一个函数对数组arr做叠加求和?
+      function sum2(arr) {
+        let result = 0; //中立变量
+        for (let i = 0; i < arr.length; i++) {
+          result += arr[i]
+        }
+        console.log(result)
+      }
+      sum2([1, 2, 3, 4]) //10
+      sum2([2, 4, 6, 8]) //20
+    </script>
+  </body>
+
+</html>

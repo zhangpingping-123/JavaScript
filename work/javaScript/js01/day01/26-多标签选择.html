@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="div1">1</div>
+    <script>
+      //即使是你选中元素仅仅只有一个 那也是长度为1的HTMLCollection
+      // let oDiv = document.getElementsByTagName("div");
+      // oDiv[0].style.backgroundColor = "pink";
+
+      // let oDiv = document.getElementsByTagName("div")[0];
+      // oDiv.style.backgroundColor = "pink";
+
+      document.getElementsByTagName("div")[0].style.backgroundColor = "pink";
+      //链式调用
+    </script>
+  </body>
+</html>

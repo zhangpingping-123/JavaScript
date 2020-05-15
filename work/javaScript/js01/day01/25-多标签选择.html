@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+    </ul>
+    <script>
+      //array (list)
+      // 数组名字 + 下标
+      //arr[0]
+      //[] 访问下一级属性的 第二种语法
+      let aLi = document.getElementsByTagName("li");
+      console.log(aLi);
+      //在编程中 数字 永远是从0开始的 三个标签对应的位置分别是0,1,2 这个0,1,2 名词叫下标 表示的含义是第n个
+      //特别的 第一个元素 永远是0
+      // 特别的 最后一个元素 永远是 arr.length - 1
+      for (let i = 0; i < aLi.length; i++) {
+        aLi[i].style.backgroundColor = "pink";
+      }
+    </script>
+  </body>
+</html>

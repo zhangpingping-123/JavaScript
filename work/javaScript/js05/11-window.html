@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- css -->
+    <!-- js -->
+    <script>
+      //window 就是 global 是我们的一个顶层对象 万事万物都属于这个window
+      //关于window也会有一些专属事件
+      //load 加载事件 当这个变量加载完毕之后会立刻触发这个事件
+      console.log("onload的上一行")
+      //window/image
+      // window.onload = function () {
+      //   console.log("onload")
+      // }
+      window.onload = function () {
+        let oDiv = document.getElementById("div1")
+        oDiv.style.backgroundColor = "pink"
+      }
+      console.log("onload的下一行")
+    </script>
+  </head>
+
+  <body>
+    <div id="div1">1</div>
+  </body>
+
+</html>

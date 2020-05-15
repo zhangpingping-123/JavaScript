@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="div1"></div>
+    <script>
+      //对一个常量n求平方函数
+      function fn(n) {
+        //返回值
+        // console.log(n * n)
+        let result = n * n
+        return result //函数的一个窗口 能够展示返回一个结果
+      }
+      //r1 r2 r3 都是全局变量 用来接收这次函数返回给我的值
+      let r1 = fn(2) //4
+      let r2 = fn(5) //25
+      let r3 = fn(9) //81
+      console.log(fn(10))
+      document.getElementById("div1").innerHTML = fn(20)
+    </script>
+  </body>
+
+</html>

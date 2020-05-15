@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //名字叫张三,年龄是18的,性别的男,婚姻状态是未婚的人的数据
+      //CRUD 增(增加)删(删除)改(修改)查(查询)
+      let person = {}
+      person.name = "张三"
+      person.age = 18
+      person.gender = "male"
+      person.marry = true
+      //object的key 总是 string
+      let wife1 = {
+        "name": "小红",
+        "age": 20,
+        "gender": "female",
+        "marry": true,
+        "husband": person
+      }
+      person.wife = wife1
+      console.log(person)
+      console.log(person.name) //张三
+
+      delete person.name
+
+      console.log(person.name)
+
+      person.name = "李四"
+      person.age = 20
+
+      console.log(person.name)
+      console.log(person.age)
+
+      //for...in 在person中遍历所有的属性键
+      for (let key in person) {
+        console.log(key)
+        console.log(person[key])
+      }
+    </script>
+  </body>
+
+</html>

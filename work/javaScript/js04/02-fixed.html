@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      // Number.prototype.toFixed()
+      // tofixed(digits: number): string
+      // 相应的小数保留digits位数,且做四舍五入 返回一个字符串类型结果
+      let num1 = 12.34;
+      let num2 = 12.3456;
+      let str1 = "12.34" //字符串实例
+      // Number.parseInt()
+      //实例.方法名()
+      console.log(num1.toFixed(2)) //"12.34"
+      console.log(num2.toFixed(2)) //"12.35"
+      console.log(str1.toFixed(2)) //str1.toFixed is not a FUNCTION
+    </script>
+  </body>
+
+</html>

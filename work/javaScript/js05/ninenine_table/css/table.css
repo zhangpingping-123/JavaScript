@@ -1,0 +1,20 @@
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+        list-style: none;
+        display: table;
+        border-collapse: collapse;
+      }
+
+      li {
+        display: table-row;
+      }
+
+      ul>li>span {
+        display: table-cell;
+        border: 1px solid black;
+        padding: 4px;
+      }

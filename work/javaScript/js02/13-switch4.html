@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <input type="text" id="text1">
+    <!-- 触发器 -->
+    <input type="button" id="btn" value="确认">
+    <!-- 渲染区 -->
+    <div id="result"></div>
+    <script>
+      let oTxt = document.getElementById("text1");
+      let oBtn = document.getElementById("btn");
+      let oResult = document.getElementById("result");
+      oBtn.onclick = function () {
+        switch (oTxt.value) {
+          //严格判断 等价于 ===
+          case "11":
+          case "12":
+          case "1":
+            oResult.innerHTML = `冬天`
+            break
+          case "2":
+          case "3":
+          case "4":
+            oResult.innerHTML = `春天`
+            break
+          case "5":
+          case "6":
+          case "7":
+            oResult.innerHTML = `夏天`
+            break
+          case "8":
+          case "9":
+          case "10":
+            oResult.innerHTML = `秋天`
+            break
+        }
+      }
+    </script>
+  </body>
+
+</html>

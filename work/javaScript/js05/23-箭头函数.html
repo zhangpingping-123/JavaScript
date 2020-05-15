@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //求平方函数
+      // function fn1(x) {
+      //   return x * x
+      // }
+      let fn1 = (x) => {
+        return x * x
+      }
+      console.log(fn1(2))
+      console.log(fn1(5))
+      console.log(fn1(9))
+      //两个数字求和
+      let fn2 = (n, m) => {
+        return n + m
+      }
+      console.log(fn2(1, 2)) //3
+      console.log(fn2(4, 5)) //9
+
+      let fn3 = (a, b, c) => {
+        return Math.max(a, b, c)
+      }
+      console.log(fn3(1, 3, 5)) //5
+      console.log(fn3(5, 3, 10)) //10
+      console.log(fn3(3, 7, 5)) //7
+
+      let fn4 = (fruit) => {
+        if (fruit === "苹果") {
+          return "天地一号"
+        } else if (fruit === "梨子") {
+          return "冰糖雪梨"
+        } else if (fruit === "香蕉") {
+          return "香蕉牛奶"
+        }
+        //函数如果不提供返回值的话 函数会返回undefined
+      }
+      console.log(fn4("苹果"))
+      console.log(fn4("梨子"))
+      console.log(fn4("香蕉"))
+      //入参最少?最多?
+      //出参最少?最多?
+      //形参和实参的个数能一样?
+      let fn5 = () => {
+        for (let i = 1; i <= 5; i++) {
+          if (i === 3) {
+            return
+          }
+          console.log(`老胡星期${i}上班`)
+        }
+      }
+    </script>
+  </body>
+
+</html>

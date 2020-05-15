@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //increment 自增长序列
+      //前置自增运算符 ++a 先自增.再赋值(打印)
+      //后置自增运算符 a++ 先赋值(打印),再自增
+      // let kill = 0;
+      // ++kill;
+      // ++kill;
+      // console.log(++kill);
+      let a = 1;
+      let b = a++; //定义一个变量b 赋值为a当时的值1, 再对a做自增加 此时a的值为2
+      let c = ++a; //此时对a再做自增运算 此时的a的值是3 再将当时的a也就是3 再赋值给c 所以c 是 3
+      let d = a;
+      console.log(a);
+      console.log(b);
+      console.log(c);
+      console.log(d);
+
+      let i = 0;
+      console.log(++i); //1
+      console.log(i++); //1
+      console.log(i++); //2
+      console.log(++i); //4
+    </script>
+  </body>
+</html>

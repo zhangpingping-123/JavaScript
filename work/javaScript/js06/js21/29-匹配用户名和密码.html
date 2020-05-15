@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    用户名:<input type="text" id="txt">
+    密码:<input type="password" id="pass">
+    <button id="btn">验证</button>
+    <div id="result"></div>
+    <script>
+      let oTxt = document.getElementById("txt");
+      let oPass = document.getElementById("pass")
+      let oBtn = document.getElementById("btn");
+      let oResult = document.getElementById('result')
+      
+      let regT = /^\w{6,16}$/
+
+      oBtn.addEventListener("click", () => {
+        let value = oTxt.value;
+        if (reg.test(value)) {
+          oResult.innerHTML = ""
+        } else {
+          oResult.innerHTML = "抱歉用户名不符合规则"
+        }
+      })
+
+      console.log(str.match(regT))
+
+      //安全程度 低(三者包含一者) 中(三者包含两者) 高(同时包含大小写和数字)
+    </script>
+  </body>
+
+</html

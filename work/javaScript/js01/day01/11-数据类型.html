@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1. String 字符串类型 表达的是一段文本 ""/''/``(ES6新增的特性,模板字符串)
+      let name = "张三";
+      let wife = "lily";
+      let age = `80`;
+      console.log(age);
+
+      //2. Number 数字类型 整数/小数/正数/负数
+      let num1 = 100;
+      let num2 = -100;
+      let num3 = 3.14;
+
+      //还有两个特别的数字值
+      let num5 = NaN; //not a number(不是一个数字) 他是一个表达不是数字值的数字类型
+      let num4 = Infinity; //无穷大 -> 正无穷大/负无穷大
+      console.log(num3);
+
+      //3. Boolean 布尔类型 有且仅有 真true/假false
+      let b1 = true;
+      let b2 = false;
+      let b3 = "true";
+
+      //4. Null 空
+      let nul = null;
+
+      //5. Undefined 未赋值的&&未定义的
+      let und;
+      console.log(nul);
+      console.log(und);
+
+      //6. Symbol ES6新增的数据类型(唯一性,独有的)
+      let sym1 = Symbol("张三");
+      let sym2 = Symbol("张三");
+      let s1 = "张三";
+      let s2 = "张三";
+      console.log(s1 == s2); //true
+      console.log(s1 === s2); //true
+      console.log(sym1 == sym2);
+      //undefined null ""
+      //undefined是一个被动行为 undefined是被迫表示没有值的
+      //null是一个程序员的主动行为(可控) 主动将这个值定义成空
+      //""是有值的 只不过他的值是一个空字符
+
+      //undefined
+      //我问张三: 张三,你有女朋友吗?
+      //张三回答: 没有
+
+      //null
+      //我问张三: 张三,你有女朋友吗?
+      //张三回答: 有
+      //我问张三: 是谁呀?
+      //张三回答: 空(没有)
+
+      //""
+      //我问张三: 张三,你有女朋友吗?
+      //张三回答: 有
+      //我问张三: 是谁呀?
+      //张三回答: 空字符串
+    </script>
+  </body>
+</html>

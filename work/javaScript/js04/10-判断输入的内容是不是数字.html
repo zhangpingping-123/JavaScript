@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <input id="txt" type="text">
+    <input id="btn" type="button" value="确定">
+    <script>
+      //1. 选择元素
+      let oTxt = document.getElementById("txt");
+      let oBtn = document.getElementById("btn");
+
+      //2. 绑定事件
+      oBtn.onclick = function () {
+        // console.log(oTxt.value)
+        //3. 将拿到的值强制转换成 Number
+        let val = Number(oTxt.value)
+        if (Number.isNaN(val)) {
+          //try...catch...finally
+          console.log("不是数字")
+          oTxt.value = ""
+        } else {
+          //开始做题
+          if (val >= 70 && val < 80) {
+            console.log("一般");
+          } else if (val >= 80 && val < 90) {
+            console.log("中等");
+          } else if (val >= 60 && val < 70) {
+            console.log("及格");
+          } else if (val >= 90) {
+            console.log("优秀");
+          } else {
+            console.log("不及格");
+          }
+        }
+      }
+    </script>
+  </body>
+
+</html>

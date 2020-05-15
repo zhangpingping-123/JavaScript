@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <ul id="container">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <script>
+      let oUl = document.getElementById("container");
+      let aLi = oUl.getElementsByTagName("li");
+      setInterval(() => {
+        for (let i = 0; i < aLi.length; i++) {
+          aLi[i].style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`
+        }
+      }, 500)
+    </script>
+  </body>
+
+</html>

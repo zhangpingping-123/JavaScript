@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="div1"
+      class="box"
+      style="width: 100px;height: 100px;border: 1px solid black;"
+    ></div>
+    <script>
+      let oBox = document.getElementById("div1"); //选择元素
+      //. 点操作符 程序语言: 下一级 相当于中文概念的 "的"
+      console.log(oBox.id); //获取oBox这个标签的id
+      console.log(oBox.className); //获取oBox的类名
+      console.log(oBox.style); //获取oBox这个标签的行内样式
+      console.log(oBox.style.width); //获取oBox这个标签的行内样式
+      console.log(oBox.style.height); //获取oBox这个标签的行内样式
+      console.log(oBox.style.border); //获取oBox这个标签的行内样式
+      oBox.className = "aaa";
+      oBox.style.border = "10px solid blue";
+      oBox.style.backgroundColor = "pink";
+    </script>
+  </body>
+</html>

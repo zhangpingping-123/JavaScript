@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      // let city = "beijing"
+      //警告框
+      // alert(city)
+      //输入框
+      //result = window.prompt(text, value);
+      //如何根据当前月份弹出默认月份
+      //Date
+      let month = prompt("请输入月份", 3) //"3"
+      //输入一个变量
+      //11, 12, 1 冬天
+      //2, 3, 4 春天
+      //5, 6, 7 夏天
+      //8, 9, 10 秋天
+      // 与或非
+      //对这个month进行switch判断
+      // goto
+      switch (month) {
+        //严格判断 等价于 === 
+        case "11":
+        case "12":
+        case "1":
+          alert("现在是冬天")
+          break
+        case "2":
+        case "3":
+        case "4":
+          alert("现在是春天")
+          break
+        case "5":
+        case "6":
+        case "7":
+          alert("现在是夏天")
+          break
+        case "8":
+        case "9":
+        case "10":
+          alert("现在是秋天")
+          break
+      }
+    </script>
+  </body>
+
+</html>

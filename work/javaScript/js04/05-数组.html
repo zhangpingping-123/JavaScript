@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      let arr = ["北京", "上海", "深圳"]
+      let arr2 = new Array("张三", "李四", "王五")
+
+      console.log(arr)
+      console.log(arr2)
+
+      console.log(arr[0]) //北京
+      console.log(arr[1]) //上海
+      arr[2] = "广州"
+      console.log(arr[arr.length - 1]) //广州
+
+      //特别的 第一个元素的下标 永远是0
+      //特别的 最后元素的下标 永远arr.length - 1
+    </script>
+  </body>
+
+</html>

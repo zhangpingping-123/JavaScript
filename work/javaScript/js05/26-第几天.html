@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //Date 可以表示 过去 未来 和 现在
+      // function showNowisWhichDay(year, month, day) {
+      //   let now = new Date(year, month - 1, day);
+      //   let old = new Date(year, 0);
+      //   //时间戳单位 ms
+      //   return `今天是今年的第${Number.parseInt((now - old) / 86400000 + 1)}天`
+      // }
+      let showNowisWhichDay = (year, month, day) =>
+        `今天是今年的第${Number.parseInt((new Date(year, month - 1, day) - new Date(year, 0)) / 86400000 + 1)}天`
+      console.log(showNowisWhichDay(2019, 3, 28))
+    </script>
+  </body>
+
+</html>

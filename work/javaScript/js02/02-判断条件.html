@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //6个false
+      //false,0,NaN,"",null,undefined
+      let a = 0;
+      // if (a = 5) {
+      //   console.log("0")
+      // }
+
+      if (true) {
+        console.log("1")
+      }
+      if (true === true) {
+        console.log("2")
+      }
+
+      if (false) {
+        console.log("3")
+      }
+      if (false === false) {
+        console.log("4")
+      }
+
+      if (1 === 1) {
+        console.log("5")
+      }
+      //1<=>真 0<=>假
+      //数学和逻辑
+      //非0数字都是真
+      if (1) {
+        console.log("6")
+      }
+
+      if (0) {
+        console.log("7")
+      }
+
+      if (9) {
+        console.log("8")
+      }
+
+      if (NaN) {
+        console.log("9")
+      }
+
+      if (Infinity) {
+        console.log("10")
+      }
+
+      if (null) {
+        console.log("11")
+      }
+
+      if (undefined) {
+        console.log("12")
+      }
+
+      if ("北京") {
+        console.log("13")
+      }
+
+      if ("北京" === "北京") {
+        console.log("14")
+      }
+
+      //数据类型不相同
+      if ("1" === 1) {
+        console.log("15")
+      }
+
+      if ("" === "") {
+        console.log("16")
+      }
+
+      if ("") {
+        console.log("17")
+      }
+    </script>
+  </body>
+
+</html>

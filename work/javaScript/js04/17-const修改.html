@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //基本(简单)数据类型和复合(引用)数据类型的区别
+      //stack(栈)
+      //提供js作用域的执行环境(window作用域和函数作用域)
+      //所有的变量名都保存在栈中
+      //所有基本数据类型的值 都保存在栈中
+
+      //堆(heap)
+      //保存所有复合数据类型的变量值
+      const obj = {
+        name: "张三"
+      }
+      obj.name = "李四"
+      console.log(obj.name) //李四
+    </script>
+  </body>
+
+</html>

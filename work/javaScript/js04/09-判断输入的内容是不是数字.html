@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <input id="txt" type="text">
+    <input id="btn" type="button" value="确定">
+    <script>
+      //1. 选择元素
+      let oTxt = document.getElementById("txt");
+      let oBtn = document.getElementById("btn");
+
+      function show() {
+        console.log("你点击了我")
+      }
+      //2. 绑定事件
+      oBtn.onclick = show
+    </script>
+  </body>
+
+</html>
