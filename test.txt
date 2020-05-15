@@ -1,0 +1,6 @@
+git config --global user.name "zhangpingping-123"
+git config --global user.email "2569228717@qq.com"
+
+git init
+
+git remote add origin https://zhangpingping-123:zpp950615@github.com/zhangpingping-123/PracticeGit.git
