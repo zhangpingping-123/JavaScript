@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul></ul>
+	</body>
+	<script src="js/jquery-1.11.1.js" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		//get请求的简写。
+		//then就是请求数据成功触发的回调函数。
+		//回调函数的res就是服务器返回的结果。
+//		$.get('getNews.php',{a:10,b:20}).then(function(res){
+//			console.log(res)
+//		})
+		
+//		$.post('js/1.post.php',{username:10,age:20}).then(function(res){
+//			console.log(res)
+//		})
+
+//		成功的回调也可以不写then,而是写成第三个参数.
+		$.post(
+			'js/1.post.php',
+			{
+				username:10,
+				age:20
+			},
+			function(res){
+				console.log(res)
+			}
+		)
+		
+
+	</script>
+</html>

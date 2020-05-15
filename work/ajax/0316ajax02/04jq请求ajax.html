@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul></ul>
+	</body>
+	<script src="js/jquery-1.11.1.js" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		// 使用jq进行ajax请求,最大的意义在于,我们要学习其中ajax封装工具的普遍写法.
+		
+		//当一个封装的方法，参数是一个json对象时，这个对象叫什么？这个对象的每个属性叫什么？
+		//这个对象英文习惯叫config。(配置)
+		//这个对象的属性叫，配置项或者选项或者参数。
+		
+		//$.ajax的其中一个选项叫timeout,用于设置请求的超时时间.
+		
+		$.ajax({
+			
+			//如果超过1秒请求还没有成功，自动结束请求。
+			timeout:1000,
+			
+			//请求的方式。
+			type:'GET',
+			
+			//服务器地址
+			url:'getNews.php',
+			
+			//发送的参数。支持发送序列化字符串
+			//data:'a=10&b=20',
+			//也支持发送json对象。
+			data:{
+				a:10,
+				b:30
+			},
+			
+			//dataType设置为json，则服务器返回的结果自动转换为数组或者对象。（如果能转）
+			dataType:'json',
+			
+			//数据请求成功触发的回调是success。
+			//success的形参res就是服务器返回的结果
+			success:function(res){
+				console.log(res);
+				res.forEach(function(item,i){
+					let html = $('ul').html();
+					$('ul').html(html+(
+						`<li>
+							<a href='#'>${item.title}</a>
+							<span>${item.date}</span>
+						</li>`
+					));
+				})
+				
+			},
+			
+			//失败的回调
+			error(err){
+				console.log('error',err.status);
+			}
+		});
+		
+//		let vm = new Vue({})
+		
+	</script>
+</html>

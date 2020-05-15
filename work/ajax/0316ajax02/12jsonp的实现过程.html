@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id='ul'></ul>
+	</body>
+	
+	<script type="text/javascript">
+				
+//		fn([111,222,333]);
+
+//		1:前端需要封装一个函数来使用跨域数据.
+//		2:通过src把这个函数名传递给后端,这个函数的参数名一般叫callback
+
+//		因为我们需要传递函数名到后端,而且只能通过url拼接参数,因此jsonp只能支持get的跨域请求.post请求无法发送函数名给后端.
+
+		function render(arr){
+			let oUl = document.querySelector('ul');		
+			for(let i=0;i<arr.length;i++){
+				oUl.innerHTML += `<li>${arr[i]}</li>`
+			}
+		}
+				
+	</script>
+	
+	<script src="http://192.168.1.10:8080/0316ajax02/js/getData.php?callback=render&t" type="text/javascript" charset="utf-8"></script>
+</html>
