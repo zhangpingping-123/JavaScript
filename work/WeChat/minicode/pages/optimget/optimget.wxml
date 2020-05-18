@@ -1,2 +1,7 @@
 <!--pages/optimget/optimget.wxml-->
-<text>pages/optimget/optimget.wxml</text>
+<text>获取参数的方法</text>
+
+<button bindtap="handleClickWithParams" data-num="100" data-number="100" data-id="001">
+参数使用的 100
+</button>
+
