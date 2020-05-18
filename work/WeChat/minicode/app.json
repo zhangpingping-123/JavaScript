@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/optimget/optimget",
     "pages/wxif/wxif",
     "pages/nav/nav",
     "pages/table/table",
