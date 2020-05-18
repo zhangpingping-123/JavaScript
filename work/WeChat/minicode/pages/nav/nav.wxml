@@ -1,0 +1,15 @@
+<!--pages/nav/nav.wxml-->
+<text>简易导航条</text>
+<view class="nav"> 
+  <view wx:for="{{navs}}" class="nav-item" wx:key="index">
+  {{item}}
+  </view>
+</view>
+
+<view class="nav"> 
+  <!-- 实现对象导航栏 -->
+  <view wx:for="{{navsObject}}" class="nav-item" wx:key="index"> 
+  {{index}}:{{item.text}}
+  </view>
+
+</view>

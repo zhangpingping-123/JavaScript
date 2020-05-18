@@ -1,0 +1,31 @@
+<!--pages/table/table.wxml-->
+<text>刘德华个人信息</text>
+<view>
+  <view>
+    <text>中文名: </text><text>{{name}}</text>
+  </view>
+  <view>
+    <text>外文名: </text><text>{{E-name}}</text>
+  </view>
+  <view>
+    <text>别名: </text><text>{{alias}}</text>
+  </view>
+  <view>
+    <text>国籍: </text><text>{{nationality}}</text>
+  </view>
+  <view>
+    <text>民族: </text><text>{{nation}}</text>
+  </view>
+  <view>
+    <text>星座: </text><text>{{constellation}}</text>
+  </view>
+  <view>
+    <text>血型: </text><text>{{blood_type}}</text>
+  </view>
+  
+  
+  
+  
+  
+  
+</view>

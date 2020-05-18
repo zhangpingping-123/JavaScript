@@ -154,14 +154,14 @@
 
   - ```js
     		axios({
-    			method:'get',
-    			url:'js/1.get.php'
-    		}).then(function(res){
-    			console.log(res.data)
-    		}).catch(function (error) {
-    		    console.log(error);
-    		})
-    
+      			method:'get',
+      			url:'js/1.get.php'
+      		}).then(function(res){
+      			console.log(res.data)
+      		}).catch(function (error) {
+      		    console.log(error);
+      		})
+      
     //		get请求的简写。
     		axios.get('js/1.get.php').then(function(res){
     			console.log(res.data)
@@ -272,7 +272,7 @@
 
         - ```js
           	<script type="text/javascript">
-          		
+            		
           //		axios的拦截
           //			1:请求拦截. -> 请求发起之前做一些事情.
           //			2:响应拦截. -> 拿到数据之前做一些事情.
@@ -889,28 +889,28 @@ Promise.reject(thenable)
 
 - ```js
   	<script type="text/javascript">
-  		
-  		//封装了promise在接链式调用then的写法。
-  		
-  		getData(500).then(function(num){
-  			console.log(num);
-  			return getData(1500)
-  		}).then(function(num){
-  			console.log(num);
-  			return getData(2500)
-  		}).then(function(num){
-  			console.log(num);
-  		})
-  			
-  		function getData(num){
-  			return new Promise(function(resolve,reject){
-  				setTimeout(function(){
-  					resolve(num);
-  				},num)
-  			})
-  		}
-  		
-  	</script>
+    		
+    		//封装了promise在接链式调用then的写法。
+    		
+    		getData(500).then(function(num){
+    			console.log(num);
+    			return getData(1500)
+    		}).then(function(num){
+    			console.log(num);
+    			return getData(2500)
+    		}).then(function(num){
+    			console.log(num);
+    		})
+    			
+    		function getData(num){
+    			return new Promise(function(resolve,reject){
+    				setTimeout(function(){
+    					resolve(num);
+    				},num)
+    			})
+    		}
+    		
+    	</script>
   ```
 
   
@@ -936,7 +936,7 @@ Promise.reject(thenable)
   - async函数return的值需要通过then接收
 - await
   - await后面接promise才有意义,但实际上它可以接任意表达式.   await 表达式
-  - await 表达式后面表达式的值; 
+  - await 的返回值就是,表达式后面表达式的值; 
   - 如果await后面的表达式是promise对象,则await表达式的返回值是promise内部resolve的实参
   - await实际上会把await后面的代码变成异步.(微任务)
 
@@ -1128,7 +1128,52 @@ function fn(){
     - object.keys( ); 数组内的元素是对象的键名
     - object.values( ); 数组内的元素是对象的键值
     - object.entries( ); 二位数组,每个二维数组内的元素是键名和键值
-  - z
+
+#### 变量查找
+
+- ​	作用域连-->变量查找
+- ![image-20200516154231751](/Users/zelin/Library/Application Support/typora-user-images/image-20200516154231751.png)
+
+#### 词法作用域
+
+- ​	js的作用域是词法作用域(静态作用域)-->作用域链跟你再哪里调用没有关系
+
+#### 原型链
+
+- 属性查找(一个对象的属性是什么):
+
+  - ![image-20200516164526839](/Users/zelin/Library/Application Support/typora-user-images/image-20200516164526839.png)
+
+- 数组的缓存方法
+
+  - ![image-20200516165252148](/Users/zelin/Library/Application Support/typora-user-images/image-20200516165252148.png)
+
+    
+
+- s
+
+### 面试题
+
+#### 面试题一
+
+![image-20200516141700881](/Users/zelin/Library/Application Support/typora-user-images/image-20200516141700881.png)
 
 
 
+### 面试题二
+
+![image-20200516143342623](/Users/zelin/Library/Application Support/typora-user-images/image-20200516143342623.png)
+
+![image-20200516152643832](/Users/zelin/Library/Application Support/typora-user-images/image-20200516152643832.png)
+
+ 
+
+#### 面试题三
+
+- ![image-20200516154206734](/Users/zelin/Library/Application Support/typora-user-images/image-20200516154206734.png)
+
+
+
+#### 面试题四
+
+![image-20200516160647804](/Users/zelin/Library/Application Support/typora-user-images/image-20200516160647804.png)

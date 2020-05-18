@@ -1,0 +1,4 @@
+/* pages/wxif/wxif.wxss */
+view{
+  border-bottom: 1rpx solid black;
+}

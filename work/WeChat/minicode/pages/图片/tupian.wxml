@@ -1,0 +1,7 @@
+<!--pages/图片/tupian.wxml-->
+<text>切换图片</text>
+<button bindtap="handleClick">切换图片</button>
+<image src="{{image_url}}"></image>
+
+<!-- 传参 -->
+<button></button>

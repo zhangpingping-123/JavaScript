@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/wxif/wxif",
+    "pages/nav/nav",
+    "pages/table/table",
+    "pages/jiujiu/jiujiu",
+    "pages/图片/tupian" 
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/wxif/wxif",
+      "text": "首页",
+      "iconPath": "/images/home.png",
+      "selectedIconPath":"/images/home-o.png"
+    },{
+      "pagePath": "pages/wxif/wxif",
+      "text": "编辑",
+      "iconPath": "/images/edit.png",
+      "selectedIconPath":"/images/edit-o.png"
+    },{
+      "pagePath": "pages/wxif/wxif",
+      "text": "购物车",
+      "iconPath": "/images/cart.png",
+      "selectedIconPath":"/images/cart-o.png"
+    },{
+      "pagePath": "pages/wxif/wxif",
+      "text": "导航",
+      "iconPath": "/images/navigator.png",
+      "selectedIconPath":"/images/navigator-o.png"
+    },{
+      "pagePath": "pages/wxif/wxif",
+      "text": "个人",
+      "iconPath": "/images/person.png",
+      "selectedIconPath":"/images/person-o.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,9 @@
+<!--pages/jiujiu/jiujiu.wxml-->
+<text>九九乘法表</text>
+<view>
+  <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i" wx:for-index="index1" wx:key="index1">
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j" wx:for-index="index2" wx:key="index2">
+      {{i}}*{{j}}={{i*j}}
+  </view>
+  </view>
+</view>
