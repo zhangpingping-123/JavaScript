@@ -1,0 +1,10 @@
+<!--内置的字体图标-->
+<icon type="success" size="{{50}}" color="yewwlogreen"></icon>
+<icon type="success_no_circle" size="{{50}}" color="yewwlogreen"></icon>
+<icon type="info" size="{{50}}" color="yewwlogreen"></icon>
+<icon type="warn" size="{{50}}" color="yewwlogreen"></icon>
+<icon type="waiting" size="{{50}}" color="yewwlogreen"></icon>
+<icon type="cancel" size="{{50}}" color="yewwlogreen"></icon>
+<icon type="download" size="{{50}}" color="yewwlogreen"></icon>
+<icon type="search" size="{{50}}" color="yewwlogreen"></icon>
+<icon type="clear" size="{{50}}" color="yewwlogreen"></icon>

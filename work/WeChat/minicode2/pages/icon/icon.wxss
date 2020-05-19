@@ -1,0 +1,13 @@
+.content {
+  height: 100rpx;
+  background-color: #57c3ba;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx;
+  box-sizing: border-box;
+  color: white;
+}
+.content .right {
+  display: flex;
+}

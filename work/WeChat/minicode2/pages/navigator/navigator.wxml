@@ -1,0 +1,17 @@
+<!--页面跳转-->
+<navigator url="/pages/logs/logs"
+open-type="navigate"
+>跳转到logs页面</navigator>
+
+<navigator url="/pages/logs/logs"
+open-type="redirect"
+>跳转到logs页面(关闭当前页面)</navigator>
+
+<navigator url="/pages/logs/logs"
+open-type="reLaunch"
+>跳转到logs页面(关闭所有页面)</navigator>
+
+<navigator url="/pages/swiper/swiper"
+open-type="switchTab"
+hover-class="other-navigator-hover"
+>跳转到tabs页面</navigator>

@@ -1,0 +1,7 @@
+<!--父子传值
+搜索框
+-->
+
+<search-input title="搜索"
+bind:myEvent = "handleEvent"
+/>

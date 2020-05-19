@@ -1,0 +1,8 @@
+<view class="content">
+  <view class="left">Web前端培训讲...</view>
+  <view class="right">
+      <view class="iconfont icon-21"></view>
+      <view class="iconfont icon-anjianfengexian"></view>
+      <view class="iconfont icon-sousuo"></view>
+  </view>
+</view>

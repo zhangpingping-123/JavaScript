@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/图片/tupian" ,
     "pages/optimget/optimget",
     "pages/wxif/wxif",
     "pages/nav/nav",
     "pages/table/table",
-    "pages/jiujiu/jiujiu",
-    "pages/图片/tupian" 
+    "pages/jiujiu/jiujiu"
   ],
   "window": {
     "backgroundTextStyle": "light",

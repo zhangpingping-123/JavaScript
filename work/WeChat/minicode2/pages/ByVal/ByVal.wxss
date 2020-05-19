@@ -1,0 +1,17 @@
+.search-input {
+  height: 100rpx;
+  background-color: #f63857;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-input .search-input-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5rpx;
+  width: 90%;
+  height: 80rpx;
+  color: #dad4d1;
+}

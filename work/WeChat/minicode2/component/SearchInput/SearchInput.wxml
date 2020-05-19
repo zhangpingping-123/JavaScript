@@ -1,0 +1,15 @@
+<!--
+  自定义组件
+  实现自定义搜索框
+  圆角:5rpx
+  宽度90%
+  高度100rpx
+-->
+
+<view class="search-input">
+  <view class="search-input-content">
+    {{title}}
+  </view>
+</view>
+
+<button bindtap="handleClick">传参数</button>

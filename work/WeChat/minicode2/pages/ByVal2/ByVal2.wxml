@@ -1,0 +1,3 @@
+<!--pages/ByVal2/ByVal2.wxml-->
+
+<view bind:myEvent = "handleEvent"></view>

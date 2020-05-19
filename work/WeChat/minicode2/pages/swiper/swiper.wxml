@@ -1,0 +1,20 @@
+<!--轮播图-->
+<swiper 
+indicator-dots="true"
+indicator-color="black"
+indicator-active-color="#fff"
+circular="true"
+interval="3000"
+autoplay="true"
+>
+  <swiper-item>
+    <image mode="aspectFit" src="./images/b1.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image mode="aspectFit" src="./images/b3.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image mode="aspectFit" src="./images/cat.jpg"></image>
+  </swiper-item>
+</swiper>
+
