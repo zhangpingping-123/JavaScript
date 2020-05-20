@@ -18,7 +18,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",
 	"appid": "wx67a8220177ba7dc3",
-	"projectname": "minicode2",
+	"projectname": "spellGroup",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -51,64 +51,22 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "自动添加文本",
-					"pathName": "pages/texts/texts",
+					"name": "我的",
+					"pathName": "pages/mine/mine",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "轮播图",
-					"pathName": "pages/swiper/swiper",
+					"name": "首页",
+					"pathName": "pages/homePage/homePage",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "radio-国家",
-					"pathName": "pages/radio/radio",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "页面跳转",
-					"pathName": "pages/navigator/navigator",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "自定义组件",
-					"pathName": "component/SearchInput/SearchInput",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "自定义组件2",
-					"pathName": "component/SearchInput2/SearchInput2",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "传值",
-					"pathName": "pages/ByVal2/ByVal2",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "icon",
-					"pathName": "pages/icon/icon",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "icon2",
-					"pathName": "pages/icon2/icon2",
+					"name": "登录",
+					"pathName": "pages/register/register",
 					"scene": null
 				}
 			]

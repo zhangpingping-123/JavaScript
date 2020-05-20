@@ -1,20 +1,22 @@
 <!--radio-->
-<radio-group >
-  <radio>美国</radio>
-  <radio>中国</radio>
-  <radio>巴西</radio>
-  <radio>日本</radio>
-  <radio>英国</radio>
-  <radio>法国</radio>
-</radio-group>
+<view>
+  <radio-group bindChange="handleChange">
+    <radio value="usn" checked>美国</radio>
+    <radio value="cn" disabled>中国</radio>
+    <radio value="br">巴西</radio>
+    <radio value="jp">日本</radio>
+    <radio value="uk">英国</radio>
+    <radio value="fr">法国</radio>
+  </radio-group>
+</view>
 
-<checkbox-group
-bindChange=""
->
-  <checkbox value="usn">美国</checkbox>
-  <checkbox value="cn">中国</checkbox>
-  <checkbox value="br">巴西</checkbox>
-  <checkbox value="jp">日本</checkbox>
-  <checkbox value="uk">英国</checkbox>
-  <checkbox value="fr">法国</checkbox>
-</checkbox-group>
+<view>
+  <checkbox-group bindChange="handleChange2">
+    <checkbox value="usn">美国</checkbox>
+    <checkbox value="cn">中国</checkbox>
+    <checkbox value="br">巴西</checkbox>
+    <checkbox value="jp">日本</checkbox>
+    <checkbox value="uk">英国</checkbox>
+    <checkbox value="fr">法国</checkbox>
+  </checkbox-group>
+</view>

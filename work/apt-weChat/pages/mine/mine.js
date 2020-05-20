@@ -1,27 +1,28 @@
-// pages/radio/radio.js
+// pages/mine/mine.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+      userInfo:{
+        nickName:""
+      }
   },
-  handleChange:function(e){
-    console.log("选中的值",e.detail.value);
+  getUserInfo:function(e){
+    console.log(e)
+    // 将数据存在本地缓存中
+    wx.setStorageSync('userInfo', e.detail.userInfo)
+    this.setData({
+      userInfo:e.detail.userInfo
+    })
   },
-  handleChange2:function(e){
-    console.log(e.detail);
-  },
-  
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
   },
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成

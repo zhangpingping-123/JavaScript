@@ -1,1 +1,5 @@
 <!-- 动态添加消息 -->
+<view>
+  <text decode="{{true}}">{{text}}</text>
+</view>
+<button bindtap="addMessage">添加消息</button>

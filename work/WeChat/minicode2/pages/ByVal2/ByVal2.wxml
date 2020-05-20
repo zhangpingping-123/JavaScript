@@ -1,3 +1,5 @@
 <!--pages/ByVal2/ByVal2.wxml-->
 
-<view bind:myEvent = "handleEvent"></view>
+<search-input title="传参"
+bind:myEvent = "handleEvent"
+/>

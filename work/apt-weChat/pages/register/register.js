@@ -1,4 +1,4 @@
-// pages/radio/radio.js
+// pages/register/register.js
 Page({
 
   /**
@@ -7,13 +7,6 @@ Page({
   data: {
 
   },
-  handleChange:function(e){
-    console.log("选中的值",e.detail.value);
-  },
-  handleChange2:function(e){
-    console.log(e.detail);
-  },
-  
 
   /**
    * 生命周期函数--监听页面加载
@@ -21,7 +14,6 @@ Page({
   onLoad: function (options) {
 
   },
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成

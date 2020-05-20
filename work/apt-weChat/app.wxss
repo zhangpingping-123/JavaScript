@@ -1,0 +1,19 @@
+/**app.wxss**/
+
+/* 导入字体样式 */
+@import "styles/iconfont.wxss";
+view,navigator,swiper {
+  margin: 0rpx;
+  padding:0rpx;
+  box-sizing: border-box;
+} 
+swiper swiper-item image{
+  width: 100%;
+}
+
+image{
+  height: 100%;
+}
+page{
+  --themeColor:#f63857
+}

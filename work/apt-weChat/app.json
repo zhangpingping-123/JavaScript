@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/homePage/homePage",
+    "pages/register/register",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f93553",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor":"#f93553",
+    "list": [{
+      "pagePath": "pages/homePage/homePage",
+      "text": "首页",
+      "iconPath": "/icons/home.png",
+      "selectedIconPath": "/icons/home-o.png"
+    },{
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "/icons/my.png",
+      "selectedIconPath": "/icons/my-o.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,47 @@
+.apt .apt-search-input {
+  height: 100rpx;
+  background-color: #f93553;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apt .apt-search-input .apt-search-input-content {
+  width: 90%;
+  height: 80rpx;
+  color: #ccc;
+  border-radius: 5rpx;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apt .apt-navs {
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+}
+.apt .apt-navs .apt-navs-item image {
+  flex: 1;
+  height: 140rpx;
+  width: 128rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.apt .apt-floor .apt-floor-title {
+  margin: 10rpx;
+  color: pink;
+}
+.apt .apt-floor .product_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.apt .apt-floor .product_list navigator {
+  height: 188rpx;
+  width: 33.33%;
+  padding: 10rpx;
+}
+.apt .apt-floor .product_list navigator image {
+  width: 100%;
+  height: 100%;
+}

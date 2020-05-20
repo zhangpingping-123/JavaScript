@@ -4,7 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    title:{
+      type:String,
+      value:""
+    }
   },
 
   /**
@@ -19,8 +22,8 @@ Component({
    */
   methods: {
     handleClick:function(){
-      console.log(点击了,开始给父组件传值);
-      this.triggerEvent("myEvent",[深圳,广州])
+      console.log("点击了,开始给父组件传值");
+      this.triggerEvent("myEvent",["深圳","广州"])
     }
   }
 })
